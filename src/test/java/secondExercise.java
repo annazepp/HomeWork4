@@ -1,15 +1,12 @@
-import DataObject.LoginData;
+import Pages.LoginPage;
 import Utils.BrowsActions;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.Color;
 import org.testng.annotations.*;
-import java.time.Duration;
 
-import static DataObject.LoginData.*;
+import static Pages.LoginPage.*;
 import static java.lang.Thread.sleep;
 
 public class secondExercise extends BrowsActions {
@@ -18,7 +15,7 @@ public class secondExercise extends BrowsActions {
     @Test
     public void loginWithInvalidCredentials() throws InterruptedException {
 
-        LoginData incorrect1 = new LoginData(driver);
+        LoginPage incorrect1 = new LoginPage(driver);
         incorrect1.usernameAction(incorrectUserName);
         incorrect1.passwordAction(incorrectPassword);
         incorrect1.buttonAction();

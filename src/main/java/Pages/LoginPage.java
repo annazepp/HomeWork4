@@ -1,9 +1,9 @@
-package DataObject;
+package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginData {
+public class LoginPage {
 
     WebDriver driver;
 
@@ -19,7 +19,7 @@ public class LoginData {
             loginButton = By.id("login-button");
 
 
-    public LoginData(WebDriver driver1){
+    public LoginPage(WebDriver driver1){
         driver = driver1;
     }
 

@@ -1,17 +1,10 @@
 
-import DataObject.LoginData;
+import Pages.LoginPage;
 import Utils.BrowsActions;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.*;
-import org.testng.asserts.SoftAssert;
 
-import java.time.Duration;
-
-import static DataObject.LoginData.*;
+import static Pages.LoginPage.*;
 import static java.lang.Thread.*;
 
 public class firstExercise extends BrowsActions {
@@ -24,7 +17,7 @@ public class firstExercise extends BrowsActions {
 
         @Test(priority = 1)
         public void signIn () {
-             LoginData step1 = new LoginData(driver);
+             LoginPage step1 = new LoginPage(driver);
              step1.usernameAction(correctUserName);
              step1.passwordAction(correctPassword);
              step1.buttonAction();
