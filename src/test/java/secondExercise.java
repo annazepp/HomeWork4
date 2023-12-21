@@ -1,12 +1,12 @@
-import Pages.LoginPage;
+import Actions.LoginActions;
 import Utils.BrowsActions;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.Color;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
-import static Pages.LoginPage.*;
+import static PageData.LoginData.*;
 import static java.lang.Thread.sleep;
 
 public class secondExercise extends BrowsActions {
@@ -15,7 +15,7 @@ public class secondExercise extends BrowsActions {
     @Test
     public void loginWithInvalidCredentials() throws InterruptedException {
 
-        LoginPage incorrect1 = new LoginPage(driver);
+        LoginActions incorrect1 = new LoginActions(driver);
         incorrect1.usernameAction(incorrectUserName);
         incorrect1.passwordAction(incorrectPassword);
         incorrect1.buttonAction();
