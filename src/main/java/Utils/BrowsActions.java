@@ -14,7 +14,7 @@ public class BrowsActions {
 
     @BeforeClass
     public void openBrowser () {
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }

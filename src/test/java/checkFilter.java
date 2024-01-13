@@ -1,10 +1,8 @@
-import Actions.CartActions;
 import Actions.FilterActions;
 import Actions.LoginActions;
 import Utils.BrowsActions;
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
