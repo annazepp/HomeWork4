@@ -1,0 +1,1 @@
+{"uuid":"ed0a69d7-f0d3-4da2-a939-8de1389e3fc8","name":"FirstSeleniumProject","children":["80b62e1e-e7ea-425b-bfd3-d62a2ac0e234"],"befores":[],"afters":[{"name":"verifySoftAssertions","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1705073039302,"stop":1705073039302}],"start":1705072978991,"stop":1705073039303}

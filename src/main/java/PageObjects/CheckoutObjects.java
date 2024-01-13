@@ -13,5 +13,6 @@ public class CheckoutObjects {
 
             checkoutContinue =  By.id("continue"),
     checkoutFinishButton = By.id("finish"),
-    backToProductsButton = By.id("back-to-products");
+    backToProductsButton = By.id("back-to-products"),
+    deleteButton = By.xpath("//button[@name='remove-sauce-labs-backpack']");
 }

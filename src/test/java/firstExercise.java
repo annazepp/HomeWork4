@@ -4,6 +4,7 @@ import Actions.CheckoutActions;
 import Actions.LoginActions;
 import Actions.LogoutActions;
 import Utils.BrowsActions;
+import io.qameta.allure.Description;
 import org.openqa.selenium.By;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
@@ -21,16 +22,13 @@ public class firstExercise extends BrowsActions {
 
 
         @Test(priority = 1)
-        public void signIn () {
+        @Description("Login, add products to the card, end checkout process and logout")
+        public void signIn () throws InterruptedException {
              LoginActions step1 = new LoginActions(driver);
              step1.usernameAction(correctUserName);
              step1.passwordAction(correctPassword);
              step1.buttonAction();
 
-        }
-
-        @Test(priority = 2)
-        public void addItemsToTheCard () {
 
             CartActions step2 = new CartActions(driver);
             step2.clickBackpack();
@@ -40,11 +38,7 @@ public class firstExercise extends BrowsActions {
             softAssertions.assertEquals(driver.findElement(By.id("item_3_title_link")).getText(), "Test.allTheThings() T-Shirt (Red)");
 
 
-        }
 
-
-        @Test(priority = 3)
-        public void checkout () {
 
             CheckoutActions step3 = new CheckoutActions(driver);
             step3.shoppingCartLink();
@@ -55,11 +49,7 @@ public class firstExercise extends BrowsActions {
             step3.continueButton();
             step3.checkoutFinish();
             step3.backToProductsAction();
-        }
 
-
-        @Test(priority = 5)
-        public void logOut () throws InterruptedException {
 
             LogoutActions step4 = new LogoutActions(driver);
             step4.burgerIconAction();

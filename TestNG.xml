@@ -1,17 +1,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1">
+<suite name="Suite">
 
     <test name="Test1">
         <classes>
             <class name="firstExercise"/>
-        </classes>
-    </test>
-
-
-    <test name="Test2">
-        <classes>
             <class name="secondExercise"/>
+            <class name="checkFilter"/>
+            <class name = "checkoutWithoutInformation"/>
+            <class name = "verifyProductDescription"/>
+            <class name = "deleteItemFromTheCart"/>
+            <class name="loginWithoutCredentials"/>
         </classes>
     </test>
+
+
 </suite>

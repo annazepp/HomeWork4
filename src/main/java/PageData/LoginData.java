@@ -11,7 +11,14 @@ public class LoginData {
     correctUserName = "standard_user",
     correctPassword = "secret_sauce",
     incorrectUserName = "locked_out_user",
-    incorrectPassword  = "secret_sauce";
+    incorrectPassword  = "secret_sauce",
+
+
+    problemUserName = "problem_user",
+
+    withoutUserName = "",
+
+    withoutPassword ="";
 
 
 
