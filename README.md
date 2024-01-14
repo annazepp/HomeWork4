@@ -17,5 +17,6 @@ Selenium, TestNG, Allure, Maven
 5. Check that product pruchase flow works correctly
 6. Check that if creds isn't presented , correct errors are given.
 7. Check that correct erros are given if login creds are invalid
-8-9. Verify that product description is presented after open item (For normal and problem user)
+8. Verify that product description is presented after open item (For normal user)
+9. Verify that product description is presented after open item (For problem user)
 10. Verify that product details are presendet after open item.
