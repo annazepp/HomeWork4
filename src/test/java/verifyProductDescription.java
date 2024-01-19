@@ -1,5 +1,6 @@
 import Actions.CartActions;
 import Actions.LoginActions;
+import Actions.LogoutActions;
 import Utils.BrowsActions;
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
@@ -34,6 +35,11 @@ public class verifyProductDescription extends BrowsActions {
         String productDescriptionInside = driver.findElement(By.cssSelector("div.inventory_details_desc")).getText();
 
         softAssertions.assertEquals(productDescriptionInside, productDescriptionOutside);
+
+        LogoutActions step4 = new LogoutActions(driver);
+        step4.burgerIconAction();
+        sleep(3000);
+        step4.logoutAction();
 
 
     }
